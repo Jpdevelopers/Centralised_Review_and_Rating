@@ -57,7 +57,7 @@
                         </ul>
                     </li> -->
                     <li class="dropdown">
-                        <a href="services.html" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Categories<span class="caret"></span></a>
+                        <a class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Categories<span class="caret"></span></a>
                         <ul class="dropdown-menu">
                             <li><a href="hotels.php">Hotels</a></li>
                             <li><a href="zomato.php">Restaurants </a></li>
