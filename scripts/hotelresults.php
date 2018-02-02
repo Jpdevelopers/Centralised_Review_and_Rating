@@ -26,10 +26,12 @@ while($result=mysqli_fetch_array($query_run)){
 $s=date("Ymd",strtotime("+7 days"));
 $t=date("Ymd",strtotime("+8 days"));
 
+$url='https://hermes.goibibo.com/hotels/v2/search/data/v3/'.$cityid.'/'.$s.'/'.$t.'/1-1_0?s=popularity&cur=INR&f={}&pid=0';
+#echo $url;
 $curl = curl_init();
         curl_setopt_array($curl, array(
             CURLOPT_RETURNTRANSFER => 1,
-            CURLOPT_URL => 'https://hermes.goibibo.com/hotels/v2/search/data/v3/'.$cityid.'/'.$s.'/'.$t.'/1-1_0?s=popularity&cur=INR&f={}&pid=0',
+            CURLOPT_URL => $url,
             CURLOPT_USERAGENT => 'Codular Sample cURL Request',
             CURLOPT_SSL_VERIFYPEER => 0
         ));
